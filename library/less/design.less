@@ -1,0 +1,264 @@
+* {
+  //background: fade(black, 5%);
+}
+
+// use mixins to make cleaner CSS, but keep the config here.
+
+.body-style() {
+  color: @default-text;
+  background: @body-background; // may want image.
+  background-image: url('/wp-content/themes/113-bandi-restaurant/library/images/textured-background.gif');
+}
+
+
+
+
+hr {
+  border: none;
+  border-top: 1px solid fade(@green, 50%);
+  margin-bottom: -.8em;
+}
+
+.green hr {
+  border-top: 1px solid fade(@black, 50%);
+}
+
+
+
+#container {
+  top: 0;//@header-height-px;
+  position: relative;
+ 
+  margin-bottom: @header-height-px;
+  padding-top: 2.5em;
+  @media screen and (max-width: @tablet-break) {
+    padding-top: 0;
+  }
+
+  .blog &, .archive & {
+    top: @header-height-px;
+  }
+}
+
+#carousel {
+  position: relative;
+  margin-top: -3em;
+  // margin-bottom: @header-height-px;
+}
+
+.admin-bar {
+  .header {
+    top: 32px !important;
+  }
+
+
+  #container {
+   // top: @header-height-px + 32px !important;
+    //position: relative;
+   // margin-bottom: @header-height-px + 32px !important;
+  }
+}
+
+
+
+.page-template-template-home #content {
+  //margin-top: @header-height-px;
+}
+
+.nav-li-style() {
+  margin: 0; // it's coming from the right so the trailing margin is fine
+  
+  height: 100%;
+  background: rgba(0,0,0,0.2); // debug
+
+  border-right:2px solid transparent;
+  background-clip: border-box; 
+
+  a {
+    padding: 5px 1em;
+
+    text-transform: capitalize;
+  }
+
+  .sub-menu, .children {
+     right: -2px !important; // account for the border
+  }
+  &:hover {
+    
+
+    .sub-menu, .children {
+      padding: 0;
+      border-right:2px solid RGBA(0,0,0,0.4);
+      border-bottom: 2px solid RGBA(0,0,0,0.4);
+     
+      background-clip: border-box; 
+    }
+  }
+}
+
+
+
+.popup-styles() {
+  // this is for the popup mobile menu: #popup-menu-container is this basically.  
+
+  // because CTA exists:
+  top: @header-height-px;
+
+  padding-top: 5px;
+
+  nav[role="navigation"] .nav > li {
+    border-right: none !important;
+  }
+
+  ul {
+
+      border-right: none !important;
+      border-bottom: none !important;
+
+  }
+
+
+}
+
+.nav-li-children-style() {
+  margin: 0; // it's coming from the right so the trailing margin is fine
+  
+}
+
+body {
+  .body-style();
+}
+
+
+.nav-font-style() {
+  
+  color: inherit;
+}
+
+
+
+.full-width-background-maker(@color : RGBA(0,0,0,0.5)) {
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 3em 0;
+
+  &:before {
+    content: "";
+    width: 4000px;
+    left: -1000px;
+    background: @color;
+    top: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.page #content {
+  width: 100%;
+  
+
+
+  
+  padding-top: @header-height-px / 2;
+
+  box-shadow: 0 1px 3px fade(black, 50%);
+
+  background: #fff;
+
+  // max-width: @max-central-outer-width;
+  max-width: 100%;
+  
+}
+
+
+.entry-content {
+  padding: 1.5em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entry-content > * {
+  width:100%;
+}
+
+
+
+.entry-content .full-width-background {
+  
+  &:first-of-type:nth-child(n+2) {
+    margin-top: 2em;
+  }
+}
+
+
+.page #inner-content {
+   
+  
+    .entry-content > *, .article-header > * {
+      .max-central;
+    }
+
+    .full-width-background {
+
+      margin: 0;
+      padding: 2em 0;
+      max-width: 100%;
+
+      > * {
+        .max-central;
+      }
+
+      @media screen and (max-width: @max-central-width) {
+        width: 100%;
+      }
+
+      > h1, > h2, > h3, > h4 {
+        margin-top: 0;
+      }
+      
+      background: @light;
+
+      .colours-bg();
+      background-image: url('/wp-content/themes/bandi-restaurant/library/images/textured-background.png') !important;
+
+      & > h2 {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 4em;
+        box-shadow: inset 0 -7px 8px -4px rgba(0, 0, 0, 0.62);
+      }
+
+      clear: both;
+
+      
+
+     
+
+
+
+    
+
+
+    }
+
+
+
+
+    .full-width-background + .full-width-background {
+      
+    }
+
+}
+
+
+
+/// this is a bit hacky but ti'll work
+.purple, .green, .black {
+  .licapacities('white');
+}

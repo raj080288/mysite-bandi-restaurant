@@ -1,0 +1,1 @@
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/cropped-cropped-lawsoc.png" />
