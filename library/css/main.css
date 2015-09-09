@@ -2541,7 +2541,7 @@ a.cta,
 a.cta-inline {
   background: #278b27;
   color: #ffffff !important;
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
   font-weight: normal;
   position: relative;
   padding: 0.5em 1em 0.5em 1em;
@@ -2911,19 +2911,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
   font-weight: normal;
 }
 h5,
 h6 {
   font-weight: normal;
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
   font-size: 1.2em;
 }
 body {
@@ -3181,7 +3181,7 @@ a + a.cta {
   right: .5em;
   color: #fff;
   text-shadow: 0 0 5px #000;
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
 }
 .row,
 .cf_columns,
@@ -3525,7 +3525,7 @@ dl {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: #0000ff;
   height: 60px;
   padding: 0;
   position: absolute;
@@ -3593,7 +3593,7 @@ nav[role="navigation"] .nav {
   z-index: 10;
   text-align: right;
   padding: 0;
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
 }
 @media screen and (max-width: 900px) {
   nav[role="navigation"] .nav {
@@ -4987,7 +4987,7 @@ a[rel="category tag"]:hover {
   right: 1.5em;
   color: #fff;
   text-shadow: 0 0 5px #000;
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
   line-height: 1;
   text-align: right;
 }
@@ -5493,7 +5493,6 @@ a[rel="category tag"]:hover {
   -moz-box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;

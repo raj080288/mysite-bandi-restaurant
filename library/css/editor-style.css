@@ -2462,7 +2462,7 @@ body#tinymce.wp-editor {
   font-size: 1em;
   line-height: 1.2em;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
   /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
   /* ==========================================================================
      HTML5 display definitions
@@ -2911,7 +2911,7 @@ body#tinymce.wp-editor a.cta,
 body#tinymce.wp-editor a.cta-inline {
   background: #278b27;
   color: #ffffff !important;
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
   font-weight: normal;
   position: relative;
   padding: 0.5em 1em 0.5em 1em;
@@ -2991,11 +2991,11 @@ body#tinymce.wp-editor h1,
 body#tinymce.wp-editor h2,
 body#tinymce.wp-editor h3,
 body#tinymce.wp-editor h4 {
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
 }
 body#tinymce.wp-editor h5,
 body#tinymce.wp-editor h6 {
-  font-family: 'Gill Sans W01';
+  font-family: sans-serif;
   font-weight: bold;
 }
 body#tinymce.wp-editor h3 {
